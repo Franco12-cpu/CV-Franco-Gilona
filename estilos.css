@@ -31,7 +31,7 @@
 h1{
     font-family: 'archivobold', sans-serif;
     font-size: 45px;
-    color: rgb(53, 74, 102);
+    color: rgb(0, 0, 0);
 }
 h2{
     font-family: 'archivoregular', sans-serif
@@ -39,14 +39,34 @@ h2{
 p{
     font-family:  'archivoregular', sans-serif
 }
-h1{
-    line-height: 2rem;
+h3{
+    font-family: 'archivoregular', sans-serif
+}
+h3{
+    color: rgb(18, 18, 88);
 }
 h1, h2, h3, p{
     text-align: center;
     text-wrap-style: balance;
 }
+h2{
+    color: rgb(18, 18, 88);
+}
 *{
     text-align: center;
+    margin: 0;
+    padding: 0;
+}
+body{
     background-color: rgb(212, 211, 210);
+}
+#hero{
+    background-image: url(img/Banner\ diseño.jpg);
+    background-position: right;
+    padding: 25px 12px;
+    height: 6vh;
+    margin: 15px;
+}
+h1{
+    text-align: left;
 }
