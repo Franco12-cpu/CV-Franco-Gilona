@@ -49,7 +49,7 @@ h1, h2, h3, p{
     text-align: center;
     text-wrap-style: balance;
 }
-h2{
+h2, h4{
     color: rgb(18, 18, 88);
 }
 *{
@@ -69,4 +69,81 @@ body{
 }
 h1{
     text-align: left;
+}
+.datos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  gap: 60px; 
+  font-family: 'Archivo', sans-serif;
+}
+.dato {
+  text-align: center;
+  padding: 0; 
+}
+.dato h4 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: rgb(0, 34, 102);
+}
+.dato p {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #000;
+}
+@media (max-width: 600px) {
+  .datos-grid {
+    grid-template-columns: 1fr;  }
+}
+h4{
+    padding: 20px 20px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+p{
+    padding-bottom: 40px;
+}
+.dato {
+    background-color: rgb(235, 235, 235);
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center; 
+    padding-bottom: 0px;
+}
+h2{
+    padding: 20px 20px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+li{
+    padding: 20px 20px 10px 20px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+ul {
+  padding: 5px 20px 15px;
+  margin: 30px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(155, 155, 155);
+  font-family: 'Archivo', sans-serif;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+ul li a {
+  color: rgb(0, 34, 102);
+  font-weight: bold;
 }
