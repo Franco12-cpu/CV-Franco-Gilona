@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Mi primer sitio</title>
+    <title>Mi primer sitio</title> <!-- este es el primer sitio de ta mayoría de todos ustedes, cuando tenga todas las pestañas de todos los trabajos abiertos el tuyo se va  aperder por ser poco descriptivo -->
     <link rel="stylesheet"
     href="estilos.css">
 
 <body>
     <header>
-        <section>
+        <section> <!-- semánticamente no es correcto utilizar sections en header porque no existen secciones, tampoco las img deben estar dentro de otra etiqueta -->
             <img src="img/imagen-perfil-cv.jpg" alt="Curriculum Vitae" width="150" height="200" />
         </section>
         <nav>
@@ -26,11 +26,11 @@
             background-position: left;
             padding: 25px 12px 25px 80px;
             height: 6vh;
-            margin: 15px;">
+            margin: 15px;"> <!-- las propiedades de estilo van desde css!!! sino se hace un choclazo, además repetís propiedades que se van pisando -->
             <h1>CV de Franco Gilona</h1>
         </section>
         <section id="contenedora">
-            <div class="Izquierda">
+            <div class="Izquierda"> <!-- además de separar estos elementos por columna en divs, que está muy bien, probá sub-dividirlos en artículos para que se pueda entender mejor que hay dos bloques. también podrías separar un poco ambos aprovechando el conocimiento que tenemos sobre la ley de percepción de proximidad. Lo mismo para la otra columna -->
                 <h2>Perfil Profesional:</h2>
                 <p>Estudiante avanzado de la Licenciatura en Diseño Gráfico y Comunicación Visual
                 , con una sólida formación en el uso de herramientas de diseño, comunicación y producción visual. 
@@ -41,7 +41,7 @@
                 aplicando un enfoque estratégico en el desarrollo de proyectos de comunicación visual que logren conectar de manera efectiva 
                 con diferentes públicos y contextos. Busco seguir creciendo profesionalmente, aportando mis conocimientos y habilidades 
                 en entornos dinámicos donde el diseño se entienda como una herramienta transformadora, capaz de generar experiencias 
-                visuales significativas y soluciones de comunicación que aporten valor real.</p>
+                visuales significativas y soluciones de comunicación que aporten valor real.</p> <!-- este texto es un choclazo para leerlo de una, probá separarlo en varios P y poniendo un espacio entre cada uno para que sea más liviano en la lectura -->
                 <h2>Experiencia Laboral:</h2>
                 <p>Trabaje durante 2 años en atencion al cliente en un local de indumentaria en Lomas de Zamora
                 Además de colaborar en trabajos de compañeros de la facultad para sus negocios.
@@ -51,7 +51,7 @@
                 <h2>Educación:</h2>
                 <p>Universidad Nacional de Lanús — 27 materias aprobadas, cursando 4°año de la carrera Diseño Grafico y
                 Comunicación Visual. Colegio Nuestra Señora de Luján — Adrogué — Promedio: 7,43</p>
-                <h2>Idiomas:</h2>
+                <h2>Idiomas:</h2> <!-- yyy yo creo que esto también te lo podrías replantear como una lista -->
                 <p>Inglés — Nivel Avanzado (B2) — First Csertificate in English (Cambridge, 2021) — Promedio 165 — Grade C
                 </p>
                 <h2>Competencias Técnicas:</h2>
@@ -59,14 +59,14 @@
                 After Effects para animaciones y motion graphics; Premiere Pro para edición y montaje de videos; 
                 Audition para edición de audio y producción de podcasts; y XD para el diseño de interfaces y prototipos interactivos. 
                 También tengo experiencia en Lightroom para corrección de color profesional y en Acrobat Pro para la creación y 
-                optimización de documentos PDF interactivos.Microsoft Excel</p>
+                optimización de documentos PDF interactivos.Microsoft Excel</p> <!-- esto también puede ser una lista -->
            </div>
         </section>
         <section>
-            <div class="personales">
+            <div class="personales"> <!-- es necesaria la existencia de este div??? -->
                 <h2>Datos Personales</h2>
-                <div class="datos-grid">
-                    <div class="dato">
+                <div class="datos-grid"> <!-- listas por aquí, listas por allá -->
+                    <div class="dato"> 
                         <h3>Edad</h3>
                         <h4>22 años</h4>
                     </div>
