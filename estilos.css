@@ -93,7 +93,7 @@ body{
     margin: 15px;
 }
 
-.datos-grid {
+.datos-grid { /* todavía no vimos la clase de grid, qué hacen estas propiedades acá?? hacelo con flex */
   display: grid;
   grid-template-columns: repeat(5, auto);
   justify-content: center;
@@ -123,7 +123,7 @@ ul, li {
 }
 
 a{
-    margin-right: 20px;
+    margin-right: 20px; /* en lugar de separar a las etiquetas A con un margin probá hacerlo con gap */
 }
 
 #contenedora{
