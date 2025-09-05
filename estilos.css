@@ -32,15 +32,17 @@ h1{
     font-family: "archivobold", sans-serif;
     font-size: 55px;
     text-align: left;
+    background-color: rgb(255, 255, 255);
+    margin: 15px;
+    padding: 30px;
 }
 h2{
     line-height: 1;
     font-size: 40px;
-    padding: 50px 20px 20px 20px;
+    padding: 40px 20px 5px 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-items: center;
+    text-align: left;
     font-family: 'archivoregular', sans-serif;
     color: rgb(17, 17, 83);
 }
@@ -63,8 +65,22 @@ h4{
     font-size: 16px;
     color: rgb(17, 17, 83);
 }
+a{
+    font-family: "archivoregular", sans-serif;
+}
 
 p{
+    line-height: 1.5;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    padding: 0rem;
+    width: 45rem;
+    font-size: 16px;
+    font-family: "archivoitalica", sans-serif;
+    text-align: left;
+}
+ 
+ul, li{
     line-height: 1.5;
     margin-top: 0.5rem;
     margin-left: 1rem;
@@ -79,10 +95,13 @@ p{
     text-align: center;
     margin: 0;
     padding: 0;
+    box-sizing: content-box;
+    unicode-bidi: isolate;
 }
 
 body{
     background-color: rgb(212, 211, 210);
+    display: block;
 }
 
 #hero{
@@ -94,63 +113,57 @@ body{
 }
 
 .datos-grid {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(5, auto);
   justify-content: center;
-  gap: 60px; 
+  gap: 20px; 
   font-family: 'archivoregular', sans-serif;
 }
 
 .dato {
     background-color: rgb(235, 235, 235);
-    padding: 10px;
+    padding: 10px 0px 10px 0px;
     border-radius: 20px;
     text-align: center; 
-    padding-bottom: 0px;
-}
-
-ul, li {
-    display: flex;
-    background-color: rgb(155, 155, 155);
-    font-family: 'Archivo', sans-serif;
-    padding: 20px 20px 20px 20px;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    color: rgb(0, 34, 102);
-    font-weight: bold;
-}
-
-a{
-    margin-right: 20px;
+    margin: 40px;
 }
 
 #contenedora{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
     gap: 20px;
 }
+
 .Izquierda, .derecha {
     flex: 1;
     padding: 0px 20px 20px 20px;
     box-sizing: border-box;
 }
 
-.izquierda {
-    flex: 2;
-}
-
-.derecha {
-    flex: 1;
-}
-
-.columna{
-    flex: 1;
-}
 .personales{
     flex: 1;
     padding: 0px 20px 20px 20px;
     box-sizing: border-box;
+}
+
+.diseño{
+    background-position: right;
+    background-position: right;
+    background-position: left;
+    height: 6vh;
+}
+
+footer{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    font-family: 'archivoregular', sans-serif;
+    padding: 10px;
+    padding: 20px;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    color: rgb(0, 34, 102);
+    font-weight: bold;
 }
