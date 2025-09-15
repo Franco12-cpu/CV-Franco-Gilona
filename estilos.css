@@ -118,6 +118,10 @@ ul{
     gap: 10px; 
 }
 
+.foto-propia-cv{
+    margin: 20px;
+}
+
 .dato {
     background-color: rgb(235, 235, 235);
     gap: 20px;
